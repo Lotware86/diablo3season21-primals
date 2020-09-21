@@ -48,22 +48,24 @@
         knowing that dictionaries don't support duplicate keys
         
 # create tuples of n elements, with no re-use
-# https://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list
+   # https://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list
 def divide_into_sets_of_n_elements(source, n):
     return [source[i * n: (i + 1) * n] for i in range(len(source) // n)]
-# end of https://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list
+end of https://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list
    I decided to put this cited source inside my code as a reference for another possibility to do division of n elements per tuple
 
-# def simple_print_listed_tuples(tpl):
+# def simple_print_listed_tuples(tpl): (https://github.com/Lotware86/tuples/blob/master/tuples.py)
     counter = 0
     for i, j in tpl:
         counter += 1
         print(''.join(['Line ' + f'{counter + 0:03}' + ' in file: ']), i, j, end='\n')
         
-  I love this one the most that keeps it very simple in which I was testing with a common celebrity tuple example (https://github.com/Lotware86/tuples/blob/master/tuples.py) in which I used Legendary Actor John Wayne's bio details to test.
+  I love this one the most that keeps it very simple in which I was testing with a common celebrity tuple example in which I used Legendary Actor John Wayne's bio details to test.
   
-# during my untangle function, I start returning new line characters, function to filter blank lines of a file
+
 # def remove_empty_lines(filename): ...
+   during my untangle function, I start returning new line characters, function to filter blank lines of a file
+   so I had to bring up a remove empty lines to clean up my text file
 
 
 # Final Remarks:
